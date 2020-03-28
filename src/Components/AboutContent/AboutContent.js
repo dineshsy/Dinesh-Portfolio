@@ -18,9 +18,9 @@ const aboutContent = () => {
                             className={classes.Icon}
                         />
                     </span>{" "}
-                    I'm <span style={{ fontWeight: "bold" }}>Dinesh</span>, an
-                    under graduate of Computer Science and Engineering program
-                    at{" "}
+                    I'm <span style={{ fontWeight: "bold" }}>Dinesh</span>, I am
+                    a pre final year graduate of Computer Science and
+                    Engineering program at{" "}
                     <a
                         href="https://sairam.edu.in/"
                         target="_blank"
