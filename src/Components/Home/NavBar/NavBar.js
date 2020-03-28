@@ -25,7 +25,6 @@ class NavBar extends Component {
     }
 
     comeInHandler = () => {
-        console.log("Not yet");
         var sections = [...document.querySelectorAll(".module")];
         var scrollPos = window.scrollY;
         const vh = Math.min(
@@ -39,7 +38,6 @@ class NavBar extends Component {
                     this.setState({
                         slideCompleted: true
                     });
-                console.log(this.state.slideCompleted, scrollPos + vh);
                 el.classList.add("come-in");
             }
         });
@@ -48,7 +46,6 @@ class NavBar extends Component {
     eventHandler = event => {
         var sections = [...document.querySelectorAll("ul p")];
         var scrollPos = window.pageYOffset;
-        // console.log(sections)
         sections.forEach(el => {
             var val = el.getAttribute("id");
             var refEl = document.querySelector(val);

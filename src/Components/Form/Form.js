@@ -15,9 +15,6 @@ class Form extends Component {
         error: false
     };
 
-    componentDidUpdate() {
-        console.log(this.state);
-    }
 
     validateEmail(mail) {
         if (
@@ -45,7 +42,6 @@ class Form extends Component {
     emailHandler = e => {
         this.setState({ email: e.target.value });
         if (this.validateEmail(e.target.value)) {
-            console.log(this.state.name, this.state.email);
             if (this.state.name.length > 0 && this.state.message.length > 0) {
                 this.setState({ buttonDisable: false });
             }
