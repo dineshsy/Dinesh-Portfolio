@@ -1,20 +1,19 @@
-import React from "react";
-import classes from "./Layouts.module.css";
+import React, { Component } from "react";
+
+import NavBar from "../../Components/Home/NavBar/NavBar";
 import Aux from "../Auxilary/Auxilary";
+import Background from "../../Components/Background/Backgound";
 
-const layout = props => {
-    return (
-        <Aux>
-            <div>ToolBar</div>
-            <main>
-                {props.children}
-                <div>Home</div>
-                <div>About</div>
-                <div>Work</div>
-                <div>Contact</div>
-            </main>
-        </Aux>
-    );
-};
+class Layout extends Component {
+    render() {
+        return (
+            <Aux>
+                <Background />
+                <NavBar />
+                <main onScroll={this.scrollHandler}>{this.props.children}</main>
+            </Aux>
+        );
+    }
+}
 
-export default layout;
+export default Layout;
