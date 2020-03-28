@@ -30,3 +30,9 @@ p {
         margin-bottom: 2rem !important;
     }
 }
+
+.Container {
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+}
