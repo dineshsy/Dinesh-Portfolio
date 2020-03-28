@@ -5,7 +5,7 @@ import classes from './HeadingPrimary.module.css'
 import HeadingPrimaryMain from './HeadingPrimaryMain/HeadinPrimaryMain'
 import ScrollText from "./ScrollText/ScrollText";
 import SocialIcon from './SocialIcons/SocialIcon'
-import ScrollIndicator from '../../UI/ScrollIndicator/ScrollIndicator'
+import ScrollIndicator from "../../UI/ScrollIndicator/ScrollIndicator";
 
 const headingPrimary = () => {
     return (
@@ -15,9 +15,9 @@ const headingPrimary = () => {
             <p className={classes.HeadingPrimarySub}>
                 Thinking “out of the box” to provide software-based solutions.
             </p>
-            <SocialIcon/>
+            <SocialIcon />
             <div className={classes.Container}>
-                <ScrollIndicator/>
+                <ScrollIndicator />
             </div>
         </div>
     );

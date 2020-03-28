@@ -7,7 +7,8 @@ import HeadingPrimary from "./HeadingPrimary/HeadingPrimary";
 const home = () => {
     return (
         <section className={classes.Home}>
-            <HeadingPrimary/>
+            <HeadingPrimary />
+            
         </section>
     );
 };

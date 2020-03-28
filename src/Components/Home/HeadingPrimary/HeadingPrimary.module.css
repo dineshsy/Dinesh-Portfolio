@@ -8,6 +8,7 @@
 
 .HeadingPrimarySub {
     display: block;
+    padding: 2rem !important;
     font-size: 2rem;
     font-weight: bold !important;
     margin-bottom: 5rem;
@@ -33,6 +34,7 @@ p {
 
 .Container {
     padding: 4rem;
+    margin: auto;
     align-items: center;
     justify-content: center;
 }

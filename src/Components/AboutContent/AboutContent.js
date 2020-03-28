@@ -27,7 +27,10 @@ const aboutContent = () => {
                         className={classes.College}
                         rel="noopener noreferrer"
                     >
-                        Sri Sairam Engineering College
+                        <span style={{ fontWeight: "bold" }}>
+                            {" "}
+                            Sri Sairam Engineering College
+                        </span>
                     </a>
                     . I live at Chennai, TamilNadu{" "}
                     <span>
@@ -47,7 +50,7 @@ const aboutContent = () => {
                         className={classes.College}
                         rel="noopener noreferrer"
                     >
-                        Resume
+                        <span style={{ fontWeight: "bold" }}> Resume </span>
                     </a>
                     . For more about me{" "}
                     <a
@@ -56,7 +59,7 @@ const aboutContent = () => {
                         className={classes.College}
                         rel="noopener noreferrer"
                     >
-                        click here.
+                        <span style={{ fontWeight: "bold" }}> click here.</span>
                     </a>{" "}
                 </p>
             </div>
