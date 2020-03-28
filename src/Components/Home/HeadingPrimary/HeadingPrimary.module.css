@@ -8,10 +8,10 @@
 
 .HeadingPrimarySub {
     display: block;
-    padding: 2rem !important;
+    padding: 0 2rem 0 2rem !important;
     font-size: 2rem;
     font-weight: bold !important;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     position: relative;
 }
 
@@ -28,7 +28,7 @@ p {
 @media only screen and (max-width:56.25em) {
     .HeadingPrimarySub {
         font-size: 1.9rem;
-        margin-bottom: 2rem !important;
+        /* margin-bottom: 2rem !important; */
     }
 }
 
