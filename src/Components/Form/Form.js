@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import axios from "../../axios-base";
 
+import email from '../../axios-email';
+
 import WithErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 
 import classes from "./Form.module.css";
@@ -73,13 +75,21 @@ class Form extends Component {
 
         axios
             .post("/Messages.json", data)
-            .then(
+            .then( res => {
+                email(data.name, data.email);
+
                 this.setState({
                     name: "",
                     email: "",
                     message: "",
                     buttonDisable: true
-                })
+                });
+
+                console.log(res)
+            }
+
+                
+
             )
             .catch(error => {
                 this.setState({ error: true });
