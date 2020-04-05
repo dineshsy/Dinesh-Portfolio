@@ -45,7 +45,7 @@ const aboutContent = () => {
                     innovative solutions to tech-based issues. And I'm open for
                     opportunities, here's my{" "}
                     <a
-                        href="https://drive.google.com/open?id=1CMXjNjo8mFd5NrliLJ6etMKvVJJ_WNDI"
+                        href="https://drive.google.com/file/d/1skCLGdQ6KLAjsr2jxpac-qRppeHrFJia/view?usp=drivesdk"
                         target="_blank"
                         className={classes.College}
                         rel="noopener noreferrer"
