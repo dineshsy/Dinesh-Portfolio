@@ -2,7 +2,7 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandSparkles, faSmileWink } from "@fortawesome/free-solid-svg-icons";
-import myself from '../../assets/myself.jpeg'
+import myself from "../../assets/myself.jpeg";
 
 import classes from "./AboutContent.module.css";
 
@@ -19,8 +19,8 @@ const aboutContent = () => {
                         />
                     </span>{" "}
                     I'm <span style={{ fontWeight: "bold" }}>Dinesh</span>, I am
-                    a pre final year graduate of Computer Science and
-                    Engineering program at{" "}
+                    a final year graduate of Computer Science and Engineering
+                    program at{" "}
                     <a
                         href="https://sairam.edu.in/"
                         target="_blank"
@@ -69,7 +69,7 @@ const aboutContent = () => {
                         alt="myself"
                         className={[
                             classes["composition__photo"],
-                            classes["composition__photo--p2"]
+                            classes["composition__photo--p2"],
                         ].join(" ")}
                         src={myself}
                     />
