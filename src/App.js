@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Layout from "./hoc/Layouts/Layouts";
 import PageBuilder from "./Container/PageBuilder";
@@ -13,7 +13,7 @@ function App({ isLoaded, setLoaded }) {
             window.removeEventListener("load", loadFunc);
         });
         return () => {};
-    }, []);
+    }, [setLoaded]);
     return (
         <Layout>
             {isLoaded ? null : <Loading />}
