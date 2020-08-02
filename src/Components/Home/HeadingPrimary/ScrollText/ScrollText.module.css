@@ -3,15 +3,14 @@
     position: relative;
     /* float: right; */
     height: 65px;
-    padding-top: 10px;
     /* margin-top: -10px !important; */
-    margin-bottom: 3rem !important;
+    margin-bottom: 2rem !important;
     margin: auto;
 }
 
 .TextScroll li {
     font-size: 4rem;
-    color: #3345A6;
+    color: #fff;
     font-weight: 700;
     padding: 0 10px;
     height: 45px;
@@ -20,7 +19,7 @@
 }
 
 .Icon {
-    color: #000 !important;
+    color: #2aa3f6 !important;
 }
 
 .flip4 {
@@ -60,7 +59,7 @@
     }
 }
 
-@media only screen and (max-width:56.25em) {
+@media only screen and (max-width: 56.25em) {
     .TextScroll {
         margin-bottom: 1rem !important;
     }

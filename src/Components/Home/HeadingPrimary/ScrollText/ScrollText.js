@@ -5,7 +5,7 @@ import {
     faRocket,
     faGrinHearts,
     faAnchor,
-    faChartLine
+    faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
 
 import classes from "./ScrollText.module.css";
@@ -15,11 +15,11 @@ const scrollText = () => {
         <div className={classes.TextScroll}>
             <ul className={classes.flip4}>
                 <li>
-                    Node{" "}
+                    Node.js{" "}
                     <FontAwesomeIcon icon={faAnchor} className={classes.Icon} />
                 </li>
                 <li>
-                    React{" "}
+                    React.js{" "}
                     <FontAwesomeIcon
                         icon={faGrinHearts}
                         className={classes.Icon}
