@@ -1,7 +1,7 @@
 /* Mouse Styling */
 
 .mouse {
-    display: inline-block;
+    display: block;
     width: 30px;
     height: 50px;
     border-radius: 11px 11px 15px 15px;
@@ -11,7 +11,7 @@
     /* margin-left: -13px; */
     /* padding: 2rem; */
     cursor: pointer;
-    z-index: 100;
+    z-index: 51 !important;
 }
 
 .mouse span {
@@ -30,6 +30,7 @@
     animation-iteration-count: infinite;
     -webkit-animation-name: scroll;
     animation-name: scroll;
+    z-index: 51;
 }
 
 @keyframes scroll {
