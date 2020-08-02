@@ -1,0 +1,135 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    opacity: 0.7;
+    flex: 1;
+    opacity: 0;
+}
+
+.row .list-projects {
+    margin: 0px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    transition: transform 600ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+    width: 100%;
+    flex: 1;
+}
+
+.row .project-item {
+    width: 100%;
+    flex: 1;
+}
+
+.row .project-item a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    flex: 1;
+}
+
+.row .project-item a:before {
+    content: "";
+    display: block;
+    padding-bottom: 75%;
+}
+
+.row .project-item a:not(:hover) .project-name,
+.row .project-item a:not(:hover) .project-intro,
+.row .project-item a:not(:hover) .project-type {
+    color: white !important;
+}
+
+.row .project-item a .inner {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    z-index: 3;
+    transition: transform 600ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+}
+
+@media (min-width: 992px) {
+    .row .project-item a .inner {
+        bottom: 3vw;
+        left: 3vw;
+        right: 3vw;
+    }
+}
+
+.row .project-item a .project-type {
+    display: block;
+    font-family: "Titillium Web", serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transition: color 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+}
+
+.row .project-item a .project-name,
+.row .project-item a .project-intro {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: "Domine", sans-serif;
+    margin: 0px;
+    max-width: 80%;
+    transition: color 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+}
+
+@media (min-width: 1200px) {
+    .row .project-item a .project-name,
+    .row .project-item a .project-intro {
+        font-size: 3rem;
+    }
+}
+
+.row .project-item a .project-name {
+    margin-bottom: 3px;
+}
+
+.row .project-item a .project-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transform: translateY(140%) skewY(31deg);
+    transition: transform 400ms cubic-bezier(0.7, 0, 0.3, 1) 100ms;
+}
+
+.row .project-item a .project-visual {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-size: 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: transform 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms, opacity 800ms cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.row .project-item a .project-visual {
+    opacity: 1;
+}
+
+@media (min-width: 1200px) {
+    .row .project-item a:hover .project-color {
+        transform: translateY(0%) skewY(0deg);
+        transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+    }
+    .row .project-item a:hover .project-visual {
+        transform: translateY(-10%);
+        transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 100ms;
+    }
+}
