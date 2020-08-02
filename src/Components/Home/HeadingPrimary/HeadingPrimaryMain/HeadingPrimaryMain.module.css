@@ -1,7 +1,7 @@
 .HeadingPrimaryMain {
     display: block;
-    font-size: 7rem;
-    font-weight: bold;
+    font-size: 5rem;
+    font-weight: 400;
     /* animation-delay: 3s;
 	 animation-iteration-count: 3;
 	 */
@@ -20,7 +20,12 @@
 .title .block {
     width: 0%;
     height: inherit;
-    background: linear-gradient( to right, rgba(194, 91, 173, 0.685) 35.23809611797333%, 67.61904805898666%, rgba(64, 78, 148, 0.74) 100%);
+    background: linear-gradient(
+        to right,
+        rgba(194, 91, 173, 0.685) 35.23809611797333%,
+        67.61904805898666%,
+        rgba(64, 78, 148, 0.74) 100%
+    );
     position: absolute;
     animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     display: inline-block;
@@ -32,23 +37,7 @@
     animation: mainFadeIn 2s forwards;
     animation-delay: 1.6s;
     opacity: 0;
-}
-
-.title h1 span {
-    width: 0px;
-    height: 0px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    background: #ffb510;
-    -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-    animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-    animation-delay: 2s;
-    margin-left: 5px;
-    margin-top: -10px;
-    position: relative;
-    bottom: 13px;
-    right: -12px;
+    z-index: 51;
 }
 
 @keyframes mainBlock {
@@ -116,7 +105,7 @@
     }
 }
 
-@media only screen and (max-width:56.25em) {
+@media only screen and (max-width: 56.25em) {
     .title {
         font-size: 4.3rem;
         margin-bottom: 2rem !important;
