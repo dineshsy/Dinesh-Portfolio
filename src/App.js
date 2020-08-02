@@ -3,14 +3,33 @@ import "./App.css";
 import Layout from "./hoc/Layouts/Layouts";
 import PageBuilder from "./Container/PageBuilder";
 import Loading from "./Loading";
-
-function App() {
-    const [isLoaded, setIsLoaded] = useState(false);
+import { connect } from "react-redux";
+import ActionTypes from "./redux/actionTypes";
+function App({ isLoaded, setLoaded }) {
     useEffect(() => {
-        window.addEventListener("load", (e) => setIsLoaded(true));
+        const loadFunc = () => setLoaded();
+        window.addEventListener("load", (e) => {
+            loadFunc();
+            window.removeEventListener("load", loadFunc);
+        });
         return () => {};
     }, []);
-    return <Layout>{isLoaded ? <PageBuilder /> : <Loading />}</Layout>;
+    return (
+        <Layout>
+            {isLoaded ? null : <Loading />}
+            <PageBuilder />
+        </Layout>
+    );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+    isLoaded: state.isLoaded,
+});
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        setLoaded: () => dispatch({ type: ActionTypes.DOM_LOADED_SUCCESS }),
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

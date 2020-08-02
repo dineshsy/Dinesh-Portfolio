@@ -21,7 +21,7 @@ const WorksImgWrapper = styled.div`
 const work = () => {
     return (
         <section className={classes.Work} id="work">
-            <Heading text={"Work"}>
+            <Heading color={"#FFF"} text={"Here are some of my projects."}>
                 <FontAwesomeIcon icon={faWrench} className={classes.Icon} />
             </Heading>
             <WorksImgWrapper>
