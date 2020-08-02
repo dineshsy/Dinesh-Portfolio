@@ -14,12 +14,12 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    background: url("/SVG/bg.svg") no-repeat center center fixed;
+    /* background: url("/SVG/bg.svg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: scroll; */
 }
 
 @media only screen and (max-width: 75em) {
@@ -42,6 +42,7 @@ html {
 
 body {
     box-sizing: border-box;
+    background-color: #facde4;
 }
 
 @media only screen and (max-width: 56.25em) {
