@@ -24,7 +24,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test",
+        "test": "echo there are no tests bro",
         "eject": "react-scripts eject",
         "deploy": "npm run build && aws s3 cp build/ s3://dineshsy.live/ --recursive"
     },
