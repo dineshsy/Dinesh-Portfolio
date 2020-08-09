@@ -11,7 +11,7 @@
     background-color: #f1f1f1;
     border-radius: 30%;
     box-shadow: 0 5px 15px -5px #00000070;
-    color: #3345A6;
+    color: #3345a6;
     overflow: hidden;
     position: relative;
     -webkit-tap-highlight-color: transparent;
@@ -22,6 +22,7 @@
     -ms-user-select: none;
     user-select: none;
     outline: none;
+    z-index: 51;
 }
 
 .SocialIcon {
@@ -41,7 +42,7 @@
     position: absolute;
     width: 120%;
     height: 120%;
-    background: #3345A6;
+    background: #3345a6;
     transform: rotate(45deg);
     left: -110%;
     top: 90%;
